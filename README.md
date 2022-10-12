@@ -68,7 +68,7 @@ template RangeProof(bits, max_abs_value) {
 }
 ```
 
- The *LessThan* template compares two inputs, and outputs 1 if the first input is less than the second input. In the *RangeProof* circuit, the *LessThan* circuit is essentially used as a GreaterEqThan, requiring that the output is 0. The *LessThan* template takes in the max number of bits for both inputs as a parameter, but does not actually check this constraint.
+ The *LessThan* template compares two inputs and outputs 1 if the first input is less than the second input. In the *RangeProof* circuit, the *LessThan* circuit is essentially used as a GreaterEqThan, requiring that the output is 0. The *LessThan* template takes in the max number of bits for both inputs as a parameter, but does not actually check this constraint.
 
 ```jsx
 // From circomlib/circuits/comparators.circom 
